@@ -5,6 +5,8 @@
 #'   for plot title and caption.
 #' @param axis_line_color The axis line color. Defaults to #E0E0E0.
 #' @param grid_major_lwd The base size for major grid lines.
+#' @param plot_margin The base size for plot margins on the top, right, bottom
+#'   and left sides in cm. Defaults to 0.25 cm.
 #'
 #' @importFrom ggplot2 %+replace%
 #' 
@@ -12,7 +14,8 @@
 dfr_theme <- function(text_size_base = 12,
                       text_color_primary = "#757575",
                       axis_line_color = "#E0E0E0",
-                      grid_major_lwd = text_size_base / 22) {
+                      grid_major_lwd = text_size_base / 22,
+                      plot_margin = 0.25) {
   
   ggplot2::theme_grey(base_size = text_size_base) %+replace%
     theme(
@@ -67,9 +70,15 @@ dfr_theme <- function(text_size_base = 12,
         fill = "#FFFFFF",
         color = NA
       ),
+      plot.margin = margin(
+        t = plot_margin, 
+        r = plot_margin, 
+        b = plot_margin, 
+        l = plot_margin, 
+        unit = "cm"
+      ),
       axis.line = element_blank(),
-      axis.ticks = element_blank(),
-      plot.margin = margin(0.25, unit = "cm")
+      axis.ticks = element_blank()
     )
   
 }
