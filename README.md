@@ -77,6 +77,6 @@ ggplot(
 -   Best practices to create a new ggplot2 theme
     (<a href="https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html#ggplot2-in-suggests-1" target="_blank">read this article</a>)
 
--   Understanding text size and resolution in ggplot2 blog post by
-    Christophe Nicault
+-   Understanding text size and resolution in ggplot2 by Christophe
+    Nicault
     (<a href="https://www.christophenicault.com/post/understand_size_dimension_ggplot2/" target="_blank">read his blog post</a>)

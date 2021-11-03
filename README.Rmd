@@ -12,7 +12,8 @@ knitr::opts_chunk$set(
   fig.width = 7,
   fig.asp = 0.618,
   fig.align = "center",
-  out.width = "100%"
+  out.width = "100%",
+  dpi = 300
 )
 ```
 
@@ -87,4 +88,4 @@ ggplot(
 
 * Best practices to create a new ggplot2 theme ([read this article](https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html#ggplot2-in-suggests-1){target="_blank"})
 
-* Understanding text size and resolution in ggplot2 blog post by Christophe Nicault ([read his blog post](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/){target="_blank"})
+* Understanding text size and resolution in ggplot2 by Christophe Nicault ([read his blog post](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/){target="_blank"})
