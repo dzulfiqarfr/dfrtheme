@@ -5,6 +5,6 @@
 #'
 #' @export
 dfr_convert_font_size <- function(text_size_base = 12,
-                              text_size_rel = 0.9166667) {
+                                  text_size_rel = 0.9166667) {
   text_size_base * text_size_rel / ggplot2::.pt
 }

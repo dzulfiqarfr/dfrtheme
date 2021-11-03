@@ -1,23 +1,35 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  fig.width = 7,
+  fig.asp = 0.618,
+  fig.align = "center",
+  out.width = "100%"
+)
+```
 
 # dfrtheme
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/dzulfiqarfr/dfrtheme/workflows/R-CMD-check/badge.svg)](https://github.com/dzulfiqarfr/dfrtheme/actions)
 <!-- badges: end -->
 
-This is an R package to apply my custom theme on
-<a href="https://ggplot2.tidyverse.org/index.html" target="_blank"><strong>ggplot2</strong></a>
-charts.
+This is an R package to apply my custom theme on [**ggplot2**](https://ggplot2.tidyverse.org/index.html){target="_blank"} charts.
 
 There are two functions:
 
--   `dfr_theme()` to modify the theme components; and
+* `dfr_theme()` to modify the theme components; and  
 
--   `dfr_convert_font_size()` to convert font size from points (pts) to
-    millimeters (mm).
+* `dfr_convert_font_size()` to convert font size from points (pts) to millimeters (mm).
+
 
 ## Installation
 
@@ -29,7 +41,7 @@ devtools::install_github("dfrtheme")
 
 ## Example
 
-``` r
+```{r demo, message=FALSE, warning=FALSE}
 library(dplyr)
 library(ggplot2)
 library(ggtext)
@@ -70,13 +82,9 @@ ggplot(
   dfr_theme()
 ```
 
-<img src="man/figures/README-demo-1.png" width="100%" style="display: block; margin: auto;" />
 
 ## Read also
 
--   Best practices to create a new ggplot2 theme
-    (<a href="https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html#ggplot2-in-suggests-1" target="_blank">read this article</a>)
+* Best practices to create a new ggplot2 theme ([read this article](https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html#ggplot2-in-suggests-1){target="_blank"})
 
--   Understanding text size and resolution in ggplot2 blog post by
-    Christophe Nicault
-    (<a href="https://www.christophenicault.com/post/understand_size_dimension_ggplot2/" target="_blank">read his blog post</a>)
+* Understanding text size and resolution in ggplot2 blog post by Christophe Nicault ([read his blog post](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/){target="_blank"})

@@ -38,5 +38,6 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# Temporary files
+# Temporary plot
 temp.png
+.Rproj.user
