@@ -19,11 +19,11 @@ dfr_theme <- function(text_size_base = 12,
   
   ggplot2::theme_grey() %+replace%
     ggplot2::theme(
+      line = ggplot2::element_line(size = line_size_base),
       text = ggplot2::element_text(
         size = text_size_base, 
         color = text_color_primary
       ),
-      line = ggplot2::element_line(size = line_size_base),
       axis.title.x = ggtext::element_markdown(margin = ggplot2::margin(t = 5)),
       axis.title.y = ggtext::element_markdown(
         angle = 90,
