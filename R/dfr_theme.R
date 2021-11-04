@@ -60,29 +60,19 @@ dfr_theme <- function(text_size_base = 12,
         margin = ggplot2::margin(t = 10)
       ),
       plot.caption.position = "plot",
-      strip.text = ggplot2::element_text(
-        face = "bold",
-        hjust = 0,
-        size = ggplot2::rel(1)
-      ),
+      strip.text = ggplot2::element_text(face = "bold", hjust = 0),
       strip.background = ggplot2::element_blank(),
       legend.text = ggplot2::element_text(size = ggplot2::rel(0.9166667)),
       legend.title = ggplot2::element_blank(),
       legend.key = ggplot2::element_blank(),
       legend.background = ggplot2::element_blank(),
       legend.margin = ggplot2::margin(0),
-      panel.background = ggplot2::element_rect(
-        fill = "#FFFFFF",
-        color = NA
-      ),
+      panel.background = ggplot2::element_rect(fill = "#FFFFFF", color = NA),
       panel.spacing = ggplot2::unit(1, "lines"),
       panel.grid.minor = ggplot2::element_blank(),
       panel.grid.major = ggplot2::element_line(color = axis_line_color),
       panel.border = ggplot2::element_blank(),
-      plot.background = ggplot2::element_rect(
-        fill = "#FFFFFF",
-        color = NA
-      ),
+      plot.background = ggplot2::element_rect(fill = "#FFFFFF", color = NA),
       plot.margin = ggplot2::margin(
         t = plot_margin,
         r = plot_margin,

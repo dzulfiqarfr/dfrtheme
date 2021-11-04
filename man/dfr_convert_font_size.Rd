@@ -2,7 +2,7 @@
 % Please edit documentation in R/dfr_convert_font_size.R
 \name{dfr_convert_font_size}
 \alias{dfr_convert_font_size}
-\title{Convert font size}
+\title{Convert font size from points to millimeters}
 \usage{
 dfr_convert_font_size(text_size_base = 12, text_size_rel = 0.9166667)
 }
@@ -12,5 +12,5 @@ dfr_convert_font_size(text_size_base = 12, text_size_rel = 0.9166667)
 \item{text_size_rel}{The default relative size for text elements.}
 }
 \description{
-Convert font size
+Convert font size from points to millimeters
 }
