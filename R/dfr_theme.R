@@ -60,7 +60,11 @@ dfr_theme <- function(text_size_base = 12,
         margin = ggplot2::margin(t = 10)
       ),
       plot.caption.position = "plot",
-      strip.text = ggplot2::element_text(face = "bold", hjust = 0),
+      strip.text = ggplot2::element_text(
+        face = "bold",
+        hjust = 0,
+        margin = ggplot2::margin(b = 5)
+      ),
       strip.background = ggplot2::element_blank(),
       legend.text = ggplot2::element_text(size = ggplot2::rel(0.9166667)),
       legend.title = ggplot2::element_blank(),
