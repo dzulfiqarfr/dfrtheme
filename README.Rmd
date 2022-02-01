@@ -37,7 +37,7 @@ There are two functions:
 ``` r
 if (!require("devtools")) install_packages("devtools")
 library(devtools)
-devtools::install_github("dfrtheme")
+devtools::install_github("dzulfiqarfr/dfrtheme")
 ```
 
 ## Example
